@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Response, Request
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from clerk_backend_api import Clerk
 import os
@@ -14,4 +14,3 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
